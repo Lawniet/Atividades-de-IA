@@ -15,14 +15,14 @@ Para instalar as dependências seguem os comandos de terminal:
 Após finalizado a instalação das bibliotecas, basta instalar o código fonte:
 
 ```
-    git clone https://github.com/openai/gym.git
-    cd Q_learning
+    git clone https://github.com/Lawniet/Atividades-de-IA.git
+    cd Atividades-de-IA/Agents/Q-tables
 ```
 
 Para executar o código basta digitar o comando abaixo:
 
 ```
-    Python3 Q_learning.py
+Python3 Q_learning.py
 ```
 
  ## Agente:
