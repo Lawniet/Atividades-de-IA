@@ -18,48 +18,49 @@ MAP = [
 
 class TaxiEnv(discrete.DiscreteEnv):
     """
-    The Taxi Problem
-    from "Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition"
-    by Tom Dietterich
-    Description:
-    There are four designated locations in the grid world indicated by R(ed), G(reen), Y(ellow), and B(lue). When the episode starts, the taxi starts off at a random square and the passenger is at a random location. The taxi drives to the passenger's location, picks up the passenger, drives to the passenger's destination (another one of the four specified locations), and then drops off the passenger. Once the passenger is dropped off, the episode ends.
-    Observations: 
-    There are 500 discrete states since there are 25 taxi positions, 5 possible locations of the passenger (including the case when the passenger is in the taxi), and 4 destination locations. 
+    O problema do táxi consiste em "Aprendizado de reforço hierárquico com decomposição da função de valor MAXQ" elaborado por Tom Dietterich.
     
-    Passenger locations:
-    - 0: R(ed)
-    - 1: G(reen)
-    - 2: Y(ellow)
-    - 3: B(lue)
-    - 4: in taxi
+    Descrição:
+    Existem quatro locais designados no mundo da grade, indicados por R(ed), G(reen), Y(ellow) e B(lue). Quando o episódio começa, o táxi começa em um quadrado aleatório e o passageiro está em um local aleatório. O táxi dirige para o local do passageiro, pega o passageiro, dirige para o destino do passageiro (outro dos quatro locais especificados) e, em seguida, deixa o passageiro. Quando o passageiro é deixado, o episódio termina.
     
-    Destinations:
-    - 0: R(ed)
-    - 1: G(reen)
-    - 2: Y(ellow)
-    - 3: B(lue)
+    Observações:
+    Existem 500 estados distintos, pois existem 25 posições de táxi, 5 locais possíveis do passageiro (incluindo o caso quando o passageiro está no táxi) e 4 locais de destino.
+    
+    Localizações dos passageiros:
+    - 0: R (ed)
+    - 1: G (reen)
+    - 2: Y (ellow)
+    - 3: B (lue)
+    - 4: no táxi
+    
+    Destinos:
+    - 0: R (ed)
+    - 1: G (reen)
+    - 2: Y (ellow)
+    - 3: B (lue)
         
-    Actions:
-    There are 6 discrete deterministic actions:
-    - 0: move south
-    - 1: move north
-    - 2: move east 
-    - 3: move west 
-    - 4: pickup passenger
-    - 5: dropoff passenger
+    Ações:
+    Existem 6 ações determinísticas discretas:
+    - 0: vá para o sul
+    - 1: vá para o norte
+    - 2: mude para leste
+    - 3: mude para oeste
+    - 4: pega passageiro
+    - 5: desembarque de passageiros
     
-    Rewards: 
-    There is a reward of -1 for each action and an additional reward of +20 for delivering the passenger. There is a reward of -10 for executing actions "pickup" and "dropoff" illegally.
+    Recompensas:
+    Há uma recompensa de -1 para cada ação e uma recompensa adicional de +20 por entregar o passageiro. Há uma recompensa de -10 pela execução de ações "retirada" e "entrega" ilegalmente.
     
-    Rendering:
-    - blue: passenger
-    - magenta: destination
-    - yellow: empty taxi
-    - green: full taxi
-    - other letters (R, G, Y and B): locations for passengers and destinations
+    Renderização:
+    - azul: passageiro
+    - magenta: destino
+    - amarelo: táxi vazio
+    - verde: táxi completo
+    - outras letras (R, G, Y e B): localizações dos passageiros e destinos
     
-    state space is represented by:
+    espaço de estado é representado por:
         (taxi_row, taxi_col, passenger_location, destination)
+    
     """
     metadata = {'render.modes': ['human', 'ansi']}
 
