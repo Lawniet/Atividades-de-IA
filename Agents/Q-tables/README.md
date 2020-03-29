@@ -7,23 +7,23 @@ Para o funcionamento correto do código é necessário ter instalado o Python 3,
  
 Para instalar as dependências seguem os comandos de terminal:
 
-'''
+```
     pip3 install gym
     pip3 install IPython
-'''
+```
 
 Após finalizado a instalação das bibliotecas, basta instalar o código fonte:
 
-'''
+```
     git clone https://github.com/openai/gym.git
     cd Q_learning
-'''
+```
 
 Para executar o código basta digitar o comando abaixo:
 
-'''
+```
     Python3 Q_learning.py
-'''
+```
 
  ## Agente:
 
@@ -51,13 +51,13 @@ Ações:
 
 ## Alterando o estado
 
-Use a função env.encode(taxi_linha,taxi_coluna,passageiro_saida,passageiro_chegada), o local de saída é um valor de 0 a 3 indicado cada uma das 4 possíveis posições de saída e chegada: R (0), G (1), Y (2) ou B (3).
+Usando a função ```env.encode(taxi_linha,taxi_coluna,passageiro_saida,passageiro_chegada)```, o local de saída é um valor de 0 a 3 indicado cada uma das 4 possíveis posições de saída e chegada: R (0), G (1), Y (2) ou B (3).
 
 ## Função de reforço
 
 Valor de reforço para cada combinação de estado X ação (ou seja, uma tabela com 500 * 6 = 3000 posições no caso deste problema)
 
-  [(sempre_um, próximo_estado, valor_do_reforço, atingiu_o_objetivo)]
+  ```[(sempre_um, próximo_estado, valor_do_reforço, atingiu_o_objetivo)]```
 
 Possíveis punições:
 
