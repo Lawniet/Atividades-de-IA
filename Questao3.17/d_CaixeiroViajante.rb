@@ -55,7 +55,7 @@ best_routes.each_with_index do |route, i|
  
   last_city = nil
   distance  = 0
-  puts "  %10s | %07s, %7s | %10s | %s" % [ "City", "Cord X", "Cord Y", "Total dist", "Distance from last city"]
+  puts "  %10s | %07s, %7s | %10s | %s" % [ "City", "Cord X", "Cord Y", "TDistância total", "Distancia da última cidade"]
   route.cities.each do |city|
     distance_between_cities = (last_city.nil? ? 0 : calculate_distance(last_city, city))
     puts "  %10s | x:%.05i, y:%.05i | %.10i | %.10i" % [city.name, city.x, city.y, distance+=distance_between_cities, distance_between_cities]
