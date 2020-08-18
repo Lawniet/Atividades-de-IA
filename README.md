@@ -1,2 +1,2 @@
 # Atividades de IA: implementações
-Repositório contendo os códigos de implementação da disciplina de Inteligência Artificial, ministrada pelo Professor Dr. Fabiano Cavalcanti Fernandes. Atividades de implemetação de diversos capítulos do livro Inteligência Artificial - 3ª Ed - Russell, Stuart e Norvig, Peter.
+Repositório contendo os códigos de implementação da disciplina de Inteligência Artificial, ministrada pelo Professor Dr. Fabiano Cavalcanti Fernandes. Atividades de implemetação de diversos capítulos do livro Inteligência Artificial - 3ª Ed - Russell, Stuart e Norvig, Peter. Obs.: Diversas linguagens de programações foram utilizadas, pois dependendo da natureza do problema a se solucionar pode haver maior eficácia em uma determinada linguagem.
