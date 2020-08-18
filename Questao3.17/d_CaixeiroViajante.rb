@@ -1,3 +1,8 @@
+# 3.17 d) Implemente o algoritmo e aplique-o a instâncias do quebra-cabeça de oito peças e do caixeiroviajante.
+# Compare o desempenho do algoritmo ao desempenho da busca de custo uniforme e comente seus resultados.
+# Adapter: Lauany Reis da Silva
+
+
 City = Struct.new(:x, :y, :name)
 Route = Struct.new(:cities, :distance)
  
