@@ -1,3 +1,6 @@
+# 3.9 b) Implemente e resolva o problema de forma ótima, utilizando um algoritmo de busca apropriado.
+# Adapter: Lauany Reis da Silva
+
 require 'matrix'
 require 'set'
 
@@ -97,7 +100,7 @@ def run
         goal = goal.parent
     end
 
-    # zip nodes with nodes+1, take the diff which gives us the move, then zip moves with nodes
+    # zip nodes com nodes + 1, pegue o diff que nos dá o movimento, então zip move com nodes
     nodes[0..-1].zip(
         nodes[0..-2].zip(nodes[1..-1]).map{ |parent,child| parent.state-child.state }
         ).each do |node, move|
@@ -106,21 +109,21 @@ def run
             m = move
             ra = s[2]
             la = ra == 0 ? 1 : 0
-            puts "M"*s[0]+"C"*s[1] + " " + # the non-goal side
+            puts "M"*s[0]+"C"*s[1] + " " + # o lado sem score
                  "<"*la + "--"+"M"*m[0].abs + "C"*m[1].abs + "--" + ">"*ra + " " + # the boat
-                 "M"*(3-s[0]) + "C"*(3-s[1]) # the goal side
+                 "M"*(3-s[0]) + "C"*(3-s[1]) # o lado com score
         end
 end
 run
 
 =begin
-Things I got stuck on (and had to look up):
-    - overriding builtin operators eql/hash/== and having nil tests work
-    - difference between class and instance variables
-    - getters and setters
-    - treating arrays like queues and stacks
-    - comprehensions / map|collect|select (a little like LINQ which is nice)
-    - overriding to_s (must evaluate to a string, not just an object) ie. to_s isn't implicitly called
-    - when to use () and when to use {} {blocks?}
-    - cant absolute a vector
+Principais dificuldades (pesquisas da linguagem):
+    - sobrescrevendo operadores integrados eql / hash / == e fazendo com que nenhum teste funcione;
+    - diferença entre variáveis de classe e instância;
+    - getters e setters;
+    - tratar matrizes como filas e pilhas;
+    - Compreensions / map | collect | select (um pouco como LINQ que é bom);
+    - sobrescrevendo to_s (deve ser avaliado como uma string, não apenas um objeto) ie. to_s não é implicitamente chamado;
+    - quando usar () e quando usar {} {blocos?};
+    - não posso dar valor absoluto um vetor.
 =end
