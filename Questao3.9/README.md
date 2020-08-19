@@ -6,6 +6,8 @@ Três missionários e três canibais estão às margens de um rio. Na mesma marg
 
 O problema é o de encontrar uma forma de levar as 6 pessoas para a outra margem do rio, sem nunca deixar numa margem um número maior de canibais do que de missionários.
 
+Tendo em vista este problema de busca cega foi realizado um estudo e implementação na linguagem Ruby do algoritmo de 	Busca	em Profundidade, o qual procura evitar estados	repetidos. O código final está disponível para verificação na plataforma SoloLearn: <strong><a href="https://code.sololearn.com/c6HR3j481sYa" title="Busca cega" target="_blank">Busca cega: Missionários e Canibais</a></strong> 
+
 
 # Referência
 
