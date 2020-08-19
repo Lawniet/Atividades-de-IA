@@ -109,11 +109,20 @@ def run
             m = move
             ra = s[2]
             la = ra == 0 ? 1 : 0
-            puts "M"*s[0]+"C"*s[1] + " " + # o lado sem score
-                 "<"*la + "--"+"M"*m[0].abs + "C"*m[1].abs + "--" + ">"*ra + " " + # the boat
-                 "M"*(3-s[0]) + "C"*(3-s[1]) # o lado com score
+            puts "L: "+"M "*s[0]+"C "*s[1] + " " + # o lado sem score
+                 "<"*la + "--["+"M"*m[0].abs + "C"*m[1].abs + "]--" + ">"*ra + " " + # o barco
+                 "R: "+"M"*(3-s[0]) + "C"*(3-s[1]) # o lado com score
         end
 end
+puts "/****************************************/"
+puts "Legendas:" 
+puts "'L': Left (lado esquerdo do rio);"
+puts "'R': Rigth (lado direito do rio);"
+puts "'M' = Missionário; 'C' = Canibal;" 
+puts "'<-- ['M'|'C'] --' = barco;" 
+puts "onde '<--' ou '-->' é direção do barco."
+puts "/****************************************/"
+puts " "
 run
 
 =begin
