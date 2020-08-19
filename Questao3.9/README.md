@@ -7,4 +7,4 @@ O problema é o de encontrar uma forma de levar as 6 pessoas para a outra margem
 
 # Referência
 
-<div style="width:733px"> <strong style="display:block;margin:12px 0 4px"><a href="https://slideplayer.com.br/slide/367818/" title="Missionários e Canibais" target="_blank">Missionários e Canibais</a></strong><iframe src="https://player.slideplayer.com.br/2/367818/" width="733" height="599" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0" allowfullscreen></iframe><div style="padding:5px 0 12px"></div></div>
+<strong><a href="https://slideplayer.com.br/slide/367818/" title="Missionários e Canibais" target="_blank">Missionários e Canibais</a></strong>
