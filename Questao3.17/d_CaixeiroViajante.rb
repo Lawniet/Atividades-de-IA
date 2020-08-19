@@ -2,7 +2,6 @@
 # Compare o desempenho do algoritmo ao desempenho da busca de custo uniforme e comente seus resultados.
 # Adapter: Lauany Reis da Silva
 
-
 City = Struct.new(:x, :y, :name)
 Route = Struct.new(:cities, :distance)
  
@@ -40,26 +39,25 @@ def r(n=10000)
   (rand*n).to_i
 end
  
-for name in ["Foo", "Bar", "LOL", "WIN!", "Ruby", "Perl", "LOL!!!"]
+for name in ["Python", "Java", "PHP", "C", "Ruby", "BrainF***ck", "JavaScript"]
   add_city(r, r, name)
 end
  
 best_routes = go([], CITIES.shuffle[0]).sort_by(&:distance)[0...10]
  
-puts "10 Best routes!"
+puts "Exibindo as 10 melhores rotas!"
 best_routes.each_with_index do |route, i|
   puts "\n"*2
-  puts "Route ##{i+1}"
-  puts " Distance: #{route.distance}"
-  puts " Cities:"
+  puts "Rota ##{i+1}"
+  puts " Distância percorrida: #{route.distance}"
+  puts " Cidades:"
  
   last_city = nil
   distance  = 0
-  puts "  %10s | %07s, %7s | %10s | %s" % [ "City", "Cord X", "Cord Y", "TDistância total", "Distancia da última cidade"]
+  puts "  %10s | %07s, %7s | %10s | %s" % [ "Cidade", "Cord X", "Cord Y", "Distância total", "Distancia da última cidade"]
   route.cities.each do |city|
     distance_between_cities = (last_city.nil? ? 0 : calculate_distance(last_city, city))
     puts "  %10s | x:%.05i, y:%.05i | %.10i | %.10i" % [city.name, city.x, city.y, distance+=distance_between_cities, distance_between_cities]
     last_city = city
   end
- 
 end
