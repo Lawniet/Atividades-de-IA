@@ -11,5 +11,5 @@ Tendo em vista este problema de busca cega foi realizado um estudo e implementa√
 
 <strong><a href="https://slideplayer.com.br/slide/6987562/" title="Mailson Felipe da Silva Marques Johnson Cordeiro Sarmento" target="_blank">Problema do Caxeiro Viajante (PCV)</a></strong>
 
-[examples](googl.com.br)
-[examples](googl.com.br){:target="_blank"}
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+[go](http://stackoverflow.com)
