@@ -4,7 +4,7 @@ O Problema do Caixeiro Viajante (PCV) é um problema clássico da Teoria dos Gra
 
 Segundo [Nilsson, 1982], o PCV consiste na procura de um circuito que possua a menor distância, começando numa cidade qualquer, entre várias, visitando cada cidade uma vez e regressando à cidade inicial.
 
-Tendo em vista este problema de busca cega foi realizado um estudo e implementação na linguagem Ruby do algoritmo de 	Busca	heurística, visto que este problema é NP-Completo e só admite soluções aproximadas. O código final está disponível para verificação na plataforma SoloLearn: <strong><a href="https://code.sololearn.com/cF1qKsLA3O6J" title="caixeiro_viajante" target="_blank">Implementação: Caixeiro Viajante</a></strong> 
+Tendo em vista este problema de busca cega foi realizado um estudo e implementação na linguagem Ruby do algoritmo de 	Busca	heurística com A*, visto que este problema é NP-Completo e só admite soluções aproximadas. O código final está disponível para verificação na plataforma SoloLearn: <strong><a href="https://code.sololearn.com/cF1qKsLA3O6J" title="caixeiro_viajante" target="_blank">Implementação: Caixeiro Viajante</a></strong> 
 
 
 # Referência
