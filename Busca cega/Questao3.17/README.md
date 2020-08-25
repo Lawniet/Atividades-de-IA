@@ -10,6 +10,3 @@ Tendo em vista este problema de busca cega foi realizado um estudo e implementaÃ
 # ReferÃªncia
 
 <strong><a href="https://slideplayer.com.br/slide/6987562/" title="Mailson Felipe da Silva Marques Johnson Cordeiro Sarmento" target="_blank">Problema do Caxeiro Viajante (PCV)</a></strong>
-
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
-[go](http://stackoverflow.com)
