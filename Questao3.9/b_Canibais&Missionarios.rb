@@ -1,4 +1,4 @@
-# 3.9 b) Implemente e resolva o problema de forma ótima, utilizando um algoritmo de busca apropriado.
+# 3.9 b) Implemente e resolva o problema (Missionários e canibais) de forma ótima, utilizando um algoritmo de busca apropriado.
 # Adapter: Lauany Reis da Silva
 
 require 'matrix'
@@ -60,7 +60,7 @@ class Node
     def children
         @@allowed_moves.map{|move| transition(move)}.select{|node| node.valid?}
     end
-
+    # Algoritmo de busca por profundidade: busca cega 
     def find_goal
         examined = Set[]
         queue = *children
